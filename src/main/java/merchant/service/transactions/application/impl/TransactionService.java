@@ -12,8 +12,6 @@ import merchant.service.transactions.infraestrutura.dto.report.ReportDTO;
 import merchant.service.transactions.infraestrutura.dto.transaction.TransactionDTO;
 import org.springframework.stereotype.Component;
 
-import java.util.Optional;
-
 @Slf4j
 @Component
 public class TransactionService implements TransactionServiceFacade {

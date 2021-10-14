@@ -1,11 +1,9 @@
 package merchant.service.gateway.decoder;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import feign.Request;
 import feign.Response;
 import feign.codec.ErrorDecoder;
-import merchant.service.gateway.ResponseError;
 import merchant.service.infrastructure.exceptions.FallibleException;
 import merchant.service.infrastructure.exceptions.MerchantException;
 import org.apache.commons.io.IOUtils;

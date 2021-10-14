@@ -30,10 +30,6 @@ public class ObjectTests {
         return new Login("demo@fail.io","cjaiU8CVerror");
     }
 
-    public static VerifyAuthenticationDTO getVerifyAuthenticationDTO(){
-        return new VerifyAuthenticationDTO("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtZXJjaGFudFVzZXJJZCI6NTMsInJvbGUiOiJ1c2VyIiwibWVyY2hhbnRJZCI6Mywic3ViTWVyY2hhbnRJZHMiOlszLDc0LDkzLDExOTEsMTI5NSwxMTEsMTM3LDEzOCwxNDIsMTQ1LDE0NiwxNTMsMzM0LDE3NSwxODQsMjIwLDIyMSwyMjIsMjIzLDI5NCwzMjIsMzIzLDMyNywzMjksMzMwLDM0OSwzOTAsMzkxLDQ1NSw0NTYsNDc5LDQ4OCw1NjMsMTE0OSw1NzAsMTEzOCwxMTU2LDExNTcsMTE1OCwxMTc5LDEyOTMsMTI5NCwxMzA2LDEzMDcsMTMyNF0sInRpbWVzdGFtcCI6MTYzMzcwNTEwMn0.Kwiv1O9chfIHPHMP6d9jQB3Yv2gub63CwSmPXi0AGhE","APPROVED");
-    }
-
     public static Transaction getTransaction(){
         return new Transaction("997877-1517822176-3");
     }
@@ -47,7 +43,7 @@ public class ObjectTests {
     }
 
     public static Report getReport() throws ParseException {
-        Date from = DateUtils.parseDateStrictly("2015-07-01",
+        Date from = DateUtils.parseDateStrictly("2000-07-01",
                 new String[] {"yyyy-MM-dd"});
         Date to = DateUtils.parseDate("2015-10-01",
                 new String[] {"yyyy-MM-dd"});
@@ -60,10 +56,6 @@ public class ObjectTests {
         Date to = DateUtils.parseDate("2015-10-01",
                 new String[] {"yyyy-MM-dd"});
         return new Report(from,to,0,0,"CREDITCARD");
-    }
-
-    public static ReportDTO getReportDTO(){
-        return new ReportDTO("APPROVED", Collections.singletonList(new ResponseDTO(2, "2342", "EUR")));
     }
 
     public static Transaction getFakeTransaction(){
@@ -91,15 +83,5 @@ public class ObjectTests {
         filter.setToDate(to);
         return filter;
     }
-
-    public static ListDTO getListDTO(){
-        ListDTO listDTO = new ListDTO();
-        listDTO.setCurrent_page(1);
-        listDTO.setFrom(1);
-        listDTO.setPrev_page_url("2");
-        listDTO.setData(Collections.singletonList(new InfoDTO()));
-        return listDTO;
-    }
-
 
 }
