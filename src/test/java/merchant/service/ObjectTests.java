@@ -3,18 +3,12 @@ package merchant.service;
 import merchant.service.customers.merchant.domain.model.Login;
 import merchant.service.customers.merchant.infrastructure.dto.client.ClientDTO;
 import merchant.service.customers.merchant.infrastructure.dto.client.CustomerInfoDTO;
-import merchant.service.customers.merchant.infrastructure.dto.merchant.VerifyAuthenticationDTO;
 import merchant.service.transactions.domain.model.Filter;
 import merchant.service.transactions.domain.model.Report;
 import merchant.service.transactions.domain.model.Transaction;
-import merchant.service.transactions.infraestrutura.dto.list.InfoDTO;
-import merchant.service.transactions.infraestrutura.dto.list.ListDTO;
-import merchant.service.transactions.infraestrutura.dto.report.ReportDTO;
-import merchant.service.transactions.infraestrutura.dto.report.ResponseDTO;
 import org.apache.commons.lang.time.DateUtils;
 
 import java.text.ParseException;
-import java.util.Collections;
 import java.util.Date;
 
 public class ObjectTests {
